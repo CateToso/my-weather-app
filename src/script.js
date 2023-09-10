@@ -22,3 +22,24 @@ if (minutes < 10) {
 }
 
 h3.innerHTML = `${day} ${hours}:${minutes}`;
+function displayWeatherConditions(response) {
+  document.querySelector("#city").innerHTML = response.data.name.toUpperCase();
+  let currentTemperature = Math.round(response.data.main.temp);
+  document.querySelector(
+    "#current-temperature"
+  ).innerHTML = `${currentTemperature}˚C`;
+}
+
+function searchCity(event) {
+  event.preventDefault();
+  let apiKey = `7c4d7f97a6913f4a71f774c285107b42`;
+  let city = document.querySelector("#city-input").value;
+  let apiEndpoint = `https://api.openweathermap.org/data/2.5/weather?q=`;
+  let metricUnits = `metric`;
+  let apiUrl = `${apiEndpoint}${city}&appid=${apiKey}&units=${metricUnits}`;
+
+  axios.get(apiUrl).then(displayWeatherConditions);
+}
+
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", searchCity);
