@@ -43,6 +43,11 @@ ul {
   font-weight: 200;
   padding-top: 15px;
 }
+.footer {
+  position: relative;
+  bottom: 75px;
+  left: 280px;
+}
 .fullpage {
   background: linear-gradient(
     111.5deg,
