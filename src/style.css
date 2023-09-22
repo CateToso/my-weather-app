@@ -19,6 +19,10 @@ h2 {
 h3 {
   font-weight: 200;
 }
+small {
+  font-family: "Courier New", Courier, monospace;
+}
+
 ul {
   list-style: none;
   display: block;
@@ -42,23 +46,6 @@ ul {
   font-size: 18px;
   font-weight: 200;
   padding-top: 15px;
-}
-.footer {
-  position: relative;
-  bottom: 75px;
-  left: 280px;
-  font-family: "PT Mono", monospace;
-}
-.fullpage {
-  background: linear-gradient(
-    111.5deg,
-    rgb(228, 247, 255) 21.9%,
-    rgb(255, 216, 194) 92.2%
-  );
-  border-radius: 8px;
-  margin: 80px auto;
-  max-width: 700px;
-  padding: 30px;
 }
 .main-weather-info {
   padding: 22px;
@@ -84,6 +71,20 @@ ul {
   left: -0.5px;
   top: 4px;
   transform: scale(2);
+}
+
+.weather-app-wrapper {
+  margin: 80px auto;
+  max-width: 700px;
+}
+.weather-app {
+  background: linear-gradient(
+    111.5deg,
+    rgb(228, 247, 255) 21.9%,
+    rgb(255, 216, 194) 92.2%
+  );
+  border-radius: 8px;
+  padding: 30px;
 }
 
 .weather-details {

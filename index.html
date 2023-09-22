@@ -32,98 +32,100 @@
     />
   </head>
   <body>
-    <div class="fullpage">
-      <div class="container">
-        <div class="main-weather-info">
-          <div class="current-weather">
+    <div class="container">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="main-weather-info">
+            <div class="current-weather">
+              <div class="row">
+                <div class="col-8">
+                  <div class="icon-temp">
+                    <h1 id="current-temperature">
+                      <span class="material-symbols-outlined"> cloud </span
+                      ><span style="padding-left: 70px"></span>10˚C
+                    </h1>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="weather-details">
+                    <ul>
+                      <li>
+                        <span class="material-symbols-outlined details-icons">
+                          humidity_percentage
+                        </span>
+                        38%
+                      </li>
+                      <li>
+                        <span class="material-symbols-outlined details-icons">
+                          air
+                        </span>
+                        5mph
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 id="city">LONDON</h2>
+            <h3></h3>
+            <form id="search-form">
+              <input
+                type="search"
+                name="City"
+                placeholder="Change city"
+                autocomplete="off"
+                class="form-control"
+                id="city-input"
+              />
+            </form>
+          </div>
+          <div class="weather-forecast">
             <div class="row">
-              <div class="col-8">
-                <div class="icon-temp">
-                  <h1 id="current-temperature">
-                    <span class="material-symbols-outlined"> cloud </span
-                    ><span style="padding-left: 70px"></span>10˚C
-                  </h1>
-                </div>
+              <div class="col">
+                <div class="day1">MON</div>
+                <span class="material-symbols-outlined forecast-icon">
+                  rainy
+                </span>
+                <div class="day1-temp">2˚ / <strong>12˚</strong></div>
               </div>
-              <div class="col-4">
-                <div class="weather-details">
-                  <ul>
-                    <li>
-                      <span class="material-symbols-outlined details-icons">
-                        humidity_percentage
-                      </span>
-                      38%
-                    </li>
-                    <li>
-                      <span class="material-symbols-outlined details-icons">
-                        air
-                      </span>
-                      5mph
-                    </li>
-                  </ul>
-                </div>
+              <div class="col">
+                <div class="day2">TUE</div>
+                <span class="material-symbols-outlined forecast-icon">
+                  sunny
+                </span>
+                <div class="day2-temp">4˚ / <strong>12˚</strong></div>
+              </div>
+              <div class="col">
+                <div class="day3">WED</div>
+                <span class="material-symbols-outlined forecast-icon">
+                  partly_cloudy_day
+                </span>
+                <div class="day3-temp">6˚ / <strong>12˚</strong></div>
+              </div>
+              <div class="col">
+                <div class="day4">THU</div>
+                <span class="material-symbols-outlined forecast-icon">
+                  thunderstorm
+                </span>
+                <div class="day4-temp">11˚ / <strong>15˚</strong></div>
+              </div>
+              <div class="col">
+                <div class="day5">FRI</div>
+                <span class="material-symbols-outlined forecast-icon">
+                  rainy
+                </span>
+                <div class="day5-temp">8˚ / <strong>15˚</strong></div>
               </div>
             </div>
           </div>
-          <h2 id="city">LONDON</h2>
-          <h3></h3>
-          <form id="search-form">
-            <input
-              type="search"
-              name="City"
-              placeholder="Change city"
-              autocomplete="off"
-              class="form-control"
-              id="city-input"
-            />
-          </form>
         </div>
-        <div class="weather-forecast">
-          <div class="row">
-            <div class="col">
-              <div class="day1">MON</div>
-              <span class="material-symbols-outlined forecast-icon">
-                rainy
-              </span>
-              <div class="day1-temp">2˚ / <strong>12˚</strong></div>
-            </div>
-            <div class="col">
-              <div class="day2">TUE</div>
-              <span class="material-symbols-outlined forecast-icon">
-                sunny
-              </span>
-              <div class="day2-temp">4˚ / <strong>12˚</strong></div>
-            </div>
-            <div class="col">
-              <div class="day3">WED</div>
-              <span class="material-symbols-outlined forecast-icon">
-                partly_cloudy_day
-              </span>
-              <div class="day3-temp">6˚ / <strong>12˚</strong></div>
-            </div>
-            <div class="col">
-              <div class="day4">THU</div>
-              <span class="material-symbols-outlined forecast-icon">
-                thunderstorm
-              </span>
-              <div class="day4-temp">11˚ / <strong>15˚</strong></div>
-            </div>
-            <div class="col">
-              <div class="day5">FRI</div>
-              <span class="material-symbols-outlined forecast-icon">
-                rainy
-              </span>
-              <div class="day5-temp">8˚ / <strong>15˚</strong></div>
-            </div>
-          </div>
-        </div>
+        <small>
+          <a href="https://github.com/CateToso/my-weather-app.git" target=""
+            >Open-source code</a
+          >
+          by Caterina Toso
+        </small>
       </div>
-    </div>
-    <div class="footer">
-      <a href="https://github.com/CateToso/my-weather-app.git" target="_blank"
-        >Open-source code</a
-      >
-      by Caterina Toso
     </div>
     <script src="src/script.js"></script>
   </body>
