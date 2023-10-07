@@ -22,6 +22,7 @@ if (minutes < 10) {
 }
 
 h3.innerHTML = `${day} ${hours}:${minutes}`;
+
 function displayWeatherConditions(response) {
   document.querySelector("#city").innerHTML = response.data.name.toUpperCase();
   let currentTemperature = Math.round(response.data.main.temp);

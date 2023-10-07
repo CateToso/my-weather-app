@@ -72,6 +72,12 @@ ul {
   top: 4px;
   transform: scale(2);
 }
+.units-links {
+  font-size: 30px;
+  position: relative;
+  top: -25px;
+  left: -10px;
+}
 
 .weather-app-wrapper {
   margin: 80px auto;
