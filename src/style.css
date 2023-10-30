@@ -29,6 +29,16 @@ ul {
   display: block;
   margin-top: 15px;
 }
+.current-weather strong {
+  font-size: 90px;
+  font-weight: 500;
+}
+
+.current-weather .units {
+  position: relative;
+  font-size: 24px;
+  top: -44px;
+}
 
 .day1,
 .day2,
